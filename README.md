@@ -1,17 +1,14 @@
-Here’s your updated README with your credit and a friendly call-to-action for stars added:
-
 ---
 
-# guns.lol Clone - Link-in-Bio Website
+# guns.lol Clone - https://guns.lol/mrx404
 
-A modern, glassmorphism-style link-in-bio website inspired by guns.lol, featuring Discord status integration, music player, and particle effects.
+A modern, glassmorphism-style link-in-bio website inspired by guns.lol, featuring a music player and particle effects.
 
 ## Features
 
 * 🎨 Glassmorphism design with neon glow effects
 * 🎵 Built-in music player with controls
 * 🌨️ Animated snow/particle effects
-* 💬 Discord rich presence integration
 * 📱 Fully responsive (mobile & desktop)
 * ⚡ Built with React, TypeScript, and Vite
 
@@ -39,17 +36,8 @@ Edit `src/data/socialLinks.tsx` and `src/pages/Home.tsx` to update:
 * Real name
 * Country
 * Social media links
-* Discord User ID (for status)
 
-### 4. Discord Status Integration
-
-To enable Discord status:
-
-1. Get your Discord User ID
-2. Set up Lanyard API or use the public endpoint
-3. Update the `discordUserId` in `src/pages/Home.tsx`
-
-### 5. Run Development Server
+### 4. Run Development Server
 
 ```bash
 npm run dev
@@ -57,7 +45,7 @@ npm run dev
 
 Visit `http://localhost:3000`
 
-### 6. Build for Production
+### 5. Build for Production
 
 ```bash
 npm run build
