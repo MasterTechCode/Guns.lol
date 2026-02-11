@@ -1,6 +1,6 @@
 ---
 
-# guns.lol Clone - https://guns.lol/mrx404
+# guns.lol Clone - [https://guns.lol/mrx404](https://guns.lol/mrx404)
 
 A modern, glassmorphism-style link-in-bio website inspired by guns.lol, featuring a music player and particle effects.
 
