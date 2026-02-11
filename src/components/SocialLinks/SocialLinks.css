@@ -1,0 +1,27 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+  animation: fadeInUp 0.6s ease-out 0.4s backwards;
+}
+
+.social-link-button {
+  animation: scaleIn 0.6s ease-out backwards;
+}
+
+.social-link-button:hover {
+  animation: none;
+}
+
+@media (max-width: 480px) {
+  .social-links {
+    gap: var(--spacing-sm);
+  }
+
+  .social-link-button {
+    width: 44px;
+    height: 44px;
+  }
+}

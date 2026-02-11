@@ -1,0 +1,18 @@
+PLACEHOLDER - Add your bg.mp4 file here
+
+This should be your background video:
+- Format: MP4
+- Resolution: 1920x1080 or higher
+- Duration: 10-30 seconds (will loop)
+- File size: <10MB recommended
+- Style: Dark, atmospheric, cyber-themed
+
+You can find free video backgrounds at:
+- Pexels: https://www.pexels.com/videos/
+- Pixabay: https://pixabay.com/videos/
+- Videvo: https://www.videvo.net/
+
+Or create your own with tools like:
+- After Effects
+- Blender
+- DaVinci Resolve

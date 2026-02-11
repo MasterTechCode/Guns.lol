@@ -1,0 +1,248 @@
+/* =========================
+   PROFILE CARD (MAIN)
+========================= */
+
+.profile-card {
+  max-width: 360px;
+  width: 100%;
+  padding: var(--spacing-xl);
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out;
+  /* Minimal glass blur */
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  height: 380px;
+}
+
+/* =========================
+   AVATAR
+========================= */
+
+.profile-avatar-container {
+  margin-bottom: var(--spacing-lg);
+  animation: scaleIn 0.6s ease-out 0.2s backwards;
+}
+
+.profile-avatar-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 0 16px rgba(255, 255, 255, 0.18),
+    0 8px 14px rgba(0, 0, 0, 0.45);
+
+  transition: all var(--transition-base);
+}
+
+.profile-avatar:hover {
+  transform: scale(1.04);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 0 22px rgba(255, 255, 255, 0.25),
+    0 10px 20px rgba(0, 0, 0, 0.55);
+}
+
+/* =========================
+   STATUS INDICATOR
+========================= */
+
+.profile-status-indicator {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-full);
+  border: 3px solid var(--color-background);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* =========================
+   PROFILE INFO
+========================= */
+
+.profile-info {
+  animation: fadeInUp 0.6s ease-out 0.3s backwards;
+}
+
+.profile-username {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-xs);
+
+  background: linear-gradient(135deg, #ffffff 0%, #b0b0b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.profile-real-name {
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-medium);
+}
+
+/* =========================
+   LOCATION
+========================= */
+
+.profile-location {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-secondary);
+
+  margin-bottom: var(--spacing-md);
+  padding: 4px 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-full);
+}
+
+/* =========================
+   ACTIVITY
+========================= */
+
+.profile-activity {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+
+  margin-top: var(--spacing-sm);
+  padding: 6px 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+}
+
+.activity-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--color-accent);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.activity-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-secondary);
+}
+
+/* =========================
+   SPOTIFY
+========================= */
+
+.profile-spotify {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-sm);
+
+  background: rgba(30, 215, 96, 0.08);
+  border: 1px solid rgba(30, 215, 96, 0.18);
+  border-radius: var(--radius-md);
+  text-align: left;
+}
+
+.spotify-album-art {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.spotify-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.spotify-song {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spotify-artist {
+  font-size: var(--font-size-xs);
+  color: var(--color-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =========================
+   EXTRA CONTENT (Music + Social)
+========================= */
+
+.profile-extra {
+  margin-top: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* =========================
+   MUSIC PLAYER (COMPACT)
+========================= */
+
+.music-player {
+  padding: 0px;
+  font-size: var(--font-size-sm);
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(2px);
+  border-radius: var(--radius-md);
+}
+
+.music-player button {
+  width: 34px;
+  height: 34px;
+}
+
+.music-player .progress-bar {
+  height: 4px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .profile-card {
+    max-width: 320px;
+    padding: var(--spacing-lg);
+  }
+
+  .profile-avatar {
+    width: 96px;
+    height: 96px;
+  }
+
+  .profile-username {
+    font-size: var(--font-size-xl);
+  }
+
+  .profile-real-name {
+    font-size: var(--font-size-sm);
+  }
+}

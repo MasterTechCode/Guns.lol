@@ -1,0 +1,18 @@
+PLACEHOLDER - Add your song.mp3 file here
+
+This should be your background music:
+- Format: MP3
+- Bitrate: 128-192 kbps
+- Duration: 2-5 minutes
+- Style: Lo-fi, electronic, ambient, or any music you like
+
+You can find royalty-free music at:
+- YouTube Audio Library: https://www.youtube.com/audiolibrary
+- Free Music Archive: https://freemusicarchive.org/
+- Incompetech: https://incompetech.com/music/
+- Bensound: https://www.bensound.com/
+
+Make sure to:
+- Check the license
+- Give proper attribution if required
+- Use music you have rights to use
