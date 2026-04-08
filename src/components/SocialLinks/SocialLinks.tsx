@@ -1,7 +1,7 @@
-import React from 'react';
-import './SocialLinks.css';
-import { IconButton } from '../UI/IconButton';
-import { SocialLink } from '../../types';
+import React from "react";
+import "./SocialLinks.css";
+import { IconButton } from "../UI/IconButton";
+import { SocialLink } from "../../types";
 
 interface SocialLinksProps {
   links: SocialLink[];
@@ -18,9 +18,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ links }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="social-link-button"
-          style={{
-            animationDelay: `${(index + 1) * 100}ms`,
-          }}
+          // Removed `style` prop; handle animation via CSS instead
         >
           {link.icon}
         </IconButton>
