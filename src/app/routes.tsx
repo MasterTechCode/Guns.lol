@@ -1,4 +1,3 @@
-import React from 'react';
 import { Home } from '../pages/Home';
 
 // This file is for future route expansion
