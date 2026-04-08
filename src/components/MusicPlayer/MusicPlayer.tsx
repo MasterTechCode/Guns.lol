@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef} from 'react';
 import { Play, Pause, SkipBack, SkipForward, Music } from 'lucide-react';
 import './MusicPlayer.css';
 import { GlassCard } from '../UI/GlassCard';
