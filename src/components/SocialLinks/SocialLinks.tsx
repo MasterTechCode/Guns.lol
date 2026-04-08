@@ -10,7 +10,7 @@ interface SocialLinksProps {
 export const SocialLinks: React.FC<SocialLinksProps> = ({ links }) => {
   return (
     <div className="social-links">
-      {links.map((link, index) => (
+      {links.map(link => (
         <IconButton
           key={link.id}
           href={link.href}
@@ -18,7 +18,6 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ links }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="social-link-button"
-          // Removed `style` prop; handle animation via CSS instead
         >
           {link.icon}
         </IconButton>
