@@ -7,10 +7,9 @@ export const routes: { path: string; element: ReactNode }[] = [
     element: <Home />,
   },
 ];
-  // Add more routes here in the future
-  // Example:
-  // {
-  //   path: '/about',
-  //   element: <About />,
-  // },
-];
+// Add more routes here in the future
+// Example:
+// {
+//   path: '/about',
+//   element: <About />,
+// },
