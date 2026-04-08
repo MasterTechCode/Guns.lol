@@ -1,14 +1,12 @@
-import { Home } from '../pages/Home';
+import { Home } from "../pages/Home";
+import type { ReactNode } from "react";
 
-// This file is for future route expansion
-// Currently only using the Home page
-// To add routing, install react-router-dom and configure routes here
-
-export const routes = [
+export const routes: { path: string; element: ReactNode }[] = [
   {
-    path: '/',
+    path: "/",
     element: <Home />,
   },
+];
   // Add more routes here in the future
   // Example:
   // {
